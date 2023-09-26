@@ -2,17 +2,20 @@ import React,  { MouseEvent } from 'react';
 import styled from "styled-components";
 
 type SquareProps = {
-    value : string;
+    value : Int8Array;
     onClick: (event: MouseEvent<HTMLButtonElement>) => void;
 }
 
 const MyButton = styled.button`
 background: lightblue;
 border: 2px solid darkblue;
-font-size: 30px;
+font-size:25px;
 font-weight: 800;
 cursor: pointer;
-outline: none;
+outline-style: solid;
+outline-width: thin;
+outline-color:  #92a8d1;
+/*margin: 1px;*/
 `;
 
 
