@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import ReactMarkdown from 'react-markdown';
+import React, { useEffect, useState } from "react";
+import ReactMarkdown from "react-markdown";
 
 const Presentation = () => {
   const [content, setContent] = useState("");
@@ -10,12 +10,11 @@ const Presentation = () => {
       .then((text) => setContent(text));
   }, []);
 
-    return (
-      <div style={{ padding: 20 }}>
-        <h2>Presentation</h2>
-        <ReactMarkdown children={content} />
-      </div>
-    );
-  }
+  return (
+    <div style={{ padding: 20 }}>
+      <ReactMarkdown children={content} />
+    </div>
+  );
+};
 
-  export default Presentation;
+export default Presentation;
